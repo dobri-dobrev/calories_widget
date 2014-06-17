@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<head>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <title>Widget Visualization</title>
+	</head>
+
+	<body>
+
+
+		<div id="wrapper">
+		</div>
+		<script type="text/javascript" src="assets/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="assets/jquery.flot.min.js"></script>
+		<script type="text/javascript" src="assets/jquery.flot.categories.min.js"></script>
+		<script type="text/javascript" src="calories_widget.js"> </script>
+		<script type="text/javascript" src="fake_data.js"> </script>
+		<script type="text/javascript">
+			var wrapper = $("#wrapper");
+			var cw = new CaloriesWidget(wrapper, 500, 400);
+			cw.render(FAKE_DATA);
+			cw.render(FAKE_DATA);
+			cw.render(FAKE_DATA);
+		</script>
+
+	</body>
+</html>
